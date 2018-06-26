@@ -1,0 +1,17 @@
+
+import React, { Component } from 'react';
+import './Root.css';
+
+class Child1 extends Component {
+    constructor(props){
+        console.log("Child1 Component constructor");
+        super(props);
+      }
+    render() {
+    return <table className="table"><tbody>
+    {this.props.movies.map(c =><tr onClick={()=>{this.props.selectMovie2State(c)}} 
+    key={c.id}><td className="td head">{c.id}</td><td className="td content">{c.movie_name}</td></tr>)}
+    </tbody></table>
+}
+}
+export default Child1;

@@ -1,0 +1,16 @@
+
+import React, { Component } from 'react';
+
+class Child1 extends Component {
+    constructor(props){
+        console.log("Child2 Component constructor");
+        super(props);
+    }
+    render() {
+    return <table><tbody>
+        <tr key={this.props.currentMovie.id}><td>Price</td><td>{this.props.currentMovie.price}</td></tr>
+        <tr key={this.props.currentMovie.id+10}><td>Date</td><td>{this.props.currentMovie.movie_date}</td></tr>
+        </tbody></table> 
+    }
+}
+export default Child1;

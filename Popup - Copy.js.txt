@@ -1,0 +1,12 @@
+
+
+import React, { Component } from 'react';
+
+const getData =(p)=>{
+ //   alert('dsjhbdsf');
+return <div className="pop">  dsbhjgsdfhds
+DSSHVJDSZHJBDCS </div>
+
+  }
+
+  export default getData;
